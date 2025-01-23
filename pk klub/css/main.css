@@ -1,0 +1,231 @@
+body {
+   font-family: 'Arial', sans-serif;
+   margin: 0;
+   padding: 0 80px; /* Увеличиваем отступы слева и справа */
+   background-color: #2a2a2a; /* Светлее черный фон */
+   color: #ffffff; /* Белый текст */
+}
+#site-header {
+   background-color: #b6042a; /* Красный фон */
+   padding: 20px;
+   transition: background-color 0.3s ease; /* Плавный переход цвета */
+   position: fixed; /* Фиксированное позиционирование */
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000; /* Убедитесь, что заголовок выше других элементов */
+}
+
+body {
+   margin-top: 80px; /* Отступ сверху для контента, чтобы не перекрывался заголовком */
+}
+
+header {
+   background: linear-gradient(to bottom, #b6042a, #7a1e1e); /* Градиент от красного к темно-красному */
+   padding: 20px; /* Внутренние отступы */
+   margin: 0; /* Убираем внешние отступы */
+   width: 100%; /* Ширина на всю ширину экрана */
+}
+ 
+ header h1 {
+    margin: 0;
+    font-size: 2.5em;
+ }
+ 
+ #site-header {
+   display: flex; /* Используем Flexbox для выравнивания элементов */
+   justify-content: space-between; /* Распределяем пространство между элементами */
+   align-items: center; /* Выравнивание по вертикали по центру */
+   background-color: rgba(182, 4, 42, 1); /* Полностью красный фон по умолчанию */
+   padding: 20px;
+   transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+   position: fixed; /* Фиксированное позиционирование */
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 1000; /* Убедитесь, что заголовок выше других элементов */
+}
+
+nav {
+   display: flex; /* Используем Flexbox для навигации */
+}
+
+nav a {
+   color: white;
+   text-decoration: none;
+   margin: 0 15px; /* Отступы между ссылками */
+}
+
+nav a:hover {
+   color: #ffeb3b; /* Желтый цвет при наведении */
+}
+
+body {
+   margin-top: 80px; /* Отступ сверху для контента, чтобы не перекрывался заголовком */
+}
+ 
+ 
+ section {
+    padding: 30px;
+ }
+ .background {
+   position: fixed; /* Фиксированное позиционирование */
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url('D:\pk klub\pk.jpg') no-repeat center center; /* Укажите путь к вашей картинке */
+   background-size: cover; /* Изображение будет покрывать весь элемент */
+   z-index: -1; /* Помещаем фон за остальным содержимым */
+}
+
+.background::before {
+   content: ''; /* Создаем псевдоэлемент */
+   position: absolute; /* Абсолютное позиционирование */
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(27, 15, 15, 0.5); /* Полупрозрачный черный фон для затемнения */
+}
+
+ 
+ .computer-type {
+   display: flex; /* Используем flexbox для горизонтального расположения элементов */
+   align-items: center; /* Выравнивание по центру по вертикали */
+   background-color: #333333; /* Темный фон для блока типов компьютеров */
+   border-radius: 10px; /* Закругленные углы */
+   padding: 20px;
+   margin-bottom: 20px; /* Отступ между блоками */
+}
+#about {
+   padding: 20px; /* Отступы внутри секции */
+}
+
+.about-content {
+   display: flex; /* Используем Flexbox для размещения текста и изображения */
+   align-items: center; /* Выравнивание по центру по вертикали */
+   justify-content: space-between; /* Распределяем пространство между элементами */
+}
+
+.about-text {
+   flex: 1; /* Текст занимает оставшееся пространство */
+   margin-right: 20px; /* Отступ между текстом и изображением */
+}
+
+.about-image img {
+   width: 700px; /* Ширина изображения */
+   height: 200px; /* Автоматическая высота для сохранения пропорций */
+   border-radius: 10px; /* Закругленные углы изображения */
+}
+
+.computer-description {
+   flex: 1; /* Занимает оставшееся пространство */
+   margin-right: 20px; /* Отступ между описанием и изображением */
+}
+
+.computer-image img {
+   width: 300px; /* Ширина изображения */
+   height: auto; /* Автоматическая высота для сохранения пропорций */
+   border-radius: 10px; /* Закругленные углы изображения */
+}
+ 
+ .computer-type h3 {
+    color: #b6042a; /* Красный цвет заголовков типов компьютеров */
+ }
+ 
+ .events, .gallery, .contact {
+    margin-top: 20px;
+ }
+ 
+ .events ul {
+    list-style-type:none; /* Убираем маркеры списка */
+ }
+ 
+ .events li {
+    margin-bottom: 10px;
+ }
+ 
+ .gallery img {
+    width: calc(33.33% - 20px);
+    margin: 10px; 
+ }
+ 
+ footer {
+   text-align: center;
+   padding: 10px; /* Внутренние отступы */
+   margin: 0; /* Убираем внешние отступы */
+   background-color: #c62828; /* Цвет фона футера */
+   color: white; /* Цвет текста футера */
+   width: 100%; /* Ширина на всю ширину экрана */
+ }
+ /* Секция статистики */
+ #statistics {
+   background-color: #222222; /* Темный фон */
+   border-radius: 10px; /* Закругленные углы */
+   padding: 30px;
+   margin-bottom: 20px;
+   text-align: center;
+ }
+ 
+ #statistics h2 {
+   color: #b6042a; /* Новый цвет заголовка */
+   margin-bottom: 20px;
+ }
+ 
+ .statistics-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивная сетка */
+   gap: 20px; /* Расстояние между элементами */
+ }
+ 
+ .statistic-item {
+   background-color: #333333; /* Темный фон для каждого элемента */
+   border-radius: 10px; /* Закругленные углы */
+   padding: 20px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Тень для объема */
+ }
+ 
+ .statistic-item h3 {
+   font-size: 2em; /* Крупный шрифт для цифр */
+   color: #b6042a; /* Новый цвет цифр */
+ }
+ 
+ .statistic-item p {
+   font-size: 1em;
+   color: #ffffff; /* Белый текст описания */
+ }
+
+
+
+ #tournament-schedule {
+   margin-top: 20px;
+   padding: 20px;
+   background-color: #333333; /* Темный фон для секции */
+   border-radius: 10px; /* Закругленные углы */
+   color: #ffffff; /* Белый текст */
+}
+
+table {
+   width: 100%; /* Ширина таблицы на всю ширину родителя */
+   border-collapse: collapse; /* Убираем двойные границы */
+}
+
+th, td {
+   border: 1px solid #b6042a; /* Красная рамка вокруг ячеек */
+   padding: 10px; /* Отступы внутри ячеек */
+   text-align: center; /* Выравнивание текста по центру */
+}
+
+th {
+   background-color: #444444; /* Темный фон для заголовков */
+   color: #b6042a; /* Красный текст заголовков */
+}
+
+tr:nth-child(even) {
+   background-color: #555555; /* Чередующиеся строки с темным фоном */
+}
+
+tr:hover {
+   background-color: #666666; /* Цвет строки при наведении курсора */
+}

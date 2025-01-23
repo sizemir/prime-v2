@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #352121, #302424); /* Градиент от темно-серого к еще более темному */
+    color: #ffffff; /* Белый текст для контраста */
+}
+
+#site-header {
+    display: flex; /* Используем Flexbox для выравнивания элементов */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    background-color: #b6042a; /* Красный фон */
+    padding: 20px;
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Убедитесь, что заголовок выше других элементов */
+}
+
+nav {
+    display: flex; /* Используем Flexbox для навигации */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Отступы между ссылками */
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Желтый цвет при наведении */
+}
+
+main {
+    padding-top: 80px; /* Отступ сверху для контента, чтобы не перекрывался заголовком */
+}
+
+#games-list {
+    padding: 20px; /* Отступы внутри секции */
+}
+
+.game-category {
+    margin-bottom: 40px; /* Отступ между категориями */
+}
+
+.game-category h3 {
+    color: #b6042a; /* Цвет заголовков категорий */
+}
+
+.game-cards {
+    display: flex; /* Используем Flexbox для карточек игр */
+    width:200px;
+    height:200px;
+    gap: 20px; /* Расстояние между карточками */
+}
+
+.game-card {
+    background-color: #444444; /* Темный фон карточки */
+    border-radius: 10px; /* Закругленные углы карточки */
+    padding: 10px;
+    width:200px;
+    height:200px;
+    text-align: center; /* Центрирование текста внутри карточки */
+    transition: transform 0.2s ease; /* Плавный переход при наведении */
+}
+
+.game-card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+.game-card img {
+    width:200px;
+    height: 200px; /* Ширина изображения на всю ширину карточки */
+    border-radius: 10px; /* Закругленные углы изображения */
+}
